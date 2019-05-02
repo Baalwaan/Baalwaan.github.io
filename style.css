@@ -39,6 +39,56 @@ nav a:hover {
   grid-template-rows: repeat(2, 50%);
 }
 
+/* first div in pane (top left) */
+.first-pane div:first-child {
+  background: url("macbook.jpg");
+  background-size: 100% 100%;
+  /* filter: grayscale(100%); */
+  /* filter: invert(75%); */
+  opacity: 0.7;
+}
+/* last div in first-pane (bottom right)*/
+.first-pane div:last-child {
+  background-image: url("me.jpg");
+  background-size: 100% 100%;
+  /* filter: invert(75%); */
+  opacity: 0.7;
+}
+
+.first-pane div:first-child:hover,
+.first-pane div:last-child:hover {
+  opacity: 1;
+  /* filter: grayscale(100%); */
+  /* filter: invert(0%); */
+}
+
+/*second div in first-pane with text */
+.first-pane .typescript {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-pane .typescript p {
+  /* margin-right: 5px; */
+  font-family: "Courier";
+  font-size: 9.5px;
+  /* font-weight: bolder; */
+  font-weight: 900;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
+
+.first-pane .typescript p:nth-child(2) {
+  border-right: 0.15em solid orange;
+  width: 6.5em;
+  opacity: 0;
+  /* setting animation to second p */
+}
+
 /* resources:
 14 Simple CSS 3D Text Effects You Should Download 2019:
 https://alinadigitalservices.com/css-3d-text-effects
