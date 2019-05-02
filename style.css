@@ -29,6 +29,16 @@ nav a:hover {
   color: black;
 }
 
+/* first-pane intro section of website */
+.first-pane {
+  box-sizing: border-box;
+  min-height: 46vh;
+  display: grid;
+  grid-gap: 0rem;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+}
+
 /* resources:
 14 Simple CSS 3D Text Effects You Should Download 2019:
 https://alinadigitalservices.com/css-3d-text-effects
