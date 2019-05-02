@@ -136,6 +136,42 @@ nav a:hover {
   }
 }
 
+.third-pane {
+  background: white;
+  border: solid green 1px;
+}
+
+.projects {
+  box-sizing: border-box;
+  height: 46vh;
+  background: red;
+  border: solid black 1px;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    /* background-color: lightblue; */
+  }
+
+  .first-pane {
+    margin: auto;
+    min-height: 91vh;
+    width: 90vw;
+  }
+
+  .first-pane .typescript p {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  .third-pane {
+    display: grid;
+    grid-gap: 0rem;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
 /* resources:
 14 Simple CSS 3D Text Effects You Should Download 2019:
 https://alinadigitalservices.com/css-3d-text-effects
