@@ -73,9 +73,9 @@ nav a:hover {
 .first-pane .typescript p {
   /* margin-right: 5px; */
   font-family: "Courier";
-  font-size: 9.5px;
+  font-size: 0.5rem;
   /* font-weight: bolder; */
-  font-weight: 900;
+  font-weight: 700;
   color: black;
   white-space: nowrap;
   overflow: hidden;
@@ -94,7 +94,7 @@ nav a:hover {
 
 .first-pane .typescript p:nth-child(3) {
   border-right: 0.15em solid orange;
-  width: 15.85em;
+  width: 15.6em;
   opacity: 0;
   /* setting animation to third p */
   animation: type2 3s steps(40, end), blink 0.5s step-end infinite alternate;
