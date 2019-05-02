@@ -87,6 +87,53 @@ nav a:hover {
   width: 6.5em;
   opacity: 0;
   /* setting animation to second p */
+  animation: type 2s steps(40, end);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.first-pane .typescript p:nth-child(3) {
+  border-right: 0.15em solid orange;
+  width: 15.85em;
+  opacity: 0;
+  /* setting animation to third p */
+  animation: type2 3s steps(40, end), blink 0.5s step-end infinite alternate;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: 0.15em solid orange;
+  }
+  100% {
+    opacity: 1;
+    border: none;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
 /* resources:
