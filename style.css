@@ -56,6 +56,11 @@ label {
   display: none;
 }
 
+main {
+  width: 85%;
+  margin: auto;
+}
+
 .first-pane {
   height: 25vh;
 }
@@ -70,7 +75,7 @@ label {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   opacity: 0.8;
-  width: 85%;
+  /* width: 85%; */
   margin: auto;
   color: white;
   display: flex;
@@ -117,6 +122,20 @@ label {
   animation: type2 3s steps(40, end), blink 0.5s step-end infinite alternate;
   animation-delay: 4s;
   animation-fill-mode: forwards;
+}
+
+.about-me {
+  /* height: 100vh; */
+  /* background: red; */
+  text-align: center;
+  /* width: 80%; */
+  margin: auto;
+}
+
+img {
+  /* border-radius: 25%; */
+  border-style: ridge;
+  text-align: center;
 }
 
 @keyframes type {
