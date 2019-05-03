@@ -1,65 +1,82 @@
 /* mobile first approach */
-html {
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
   scroll-behavior: smooth;
 }
 
-body {
-  padding: 0;
-  margin: 0;
+html {
   font-family: "Oswald", sans-serif;
-  color: white;
 }
 
 nav {
-  box-sizing: border-box;
-  height: 8vh;
-  padding: 2vh 2vw;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
+  border-bottom: 1px solid black;
+  text-align: right;
+  min-height: 70px;
+  margin-bottom: 25px;
+  /*minheighttopushcontentdownline-height: 70px;*/
 }
 
-nav a {
-  text-decoration: none;
-  font-size: 1rem;
+.menu {
+  background: black;
+  margin: 0 30px 0 0;
   text-align: center;
-  color: black;
-}
-/* nav bar elements hover effects */
-nav a:hover {
-  color: black;
+  width: 100%;
+  display: none;
+  z-index: 1;
 }
 
-/* first-pane intro section of website */
+.menu a {
+  text-decoration: none;
+  color: grey;
+  margin: 0 10px;
+  line-height: 70px;
+  display: block;
+  border-bottom: 1px solid black;
+}
+.menu a:hover {
+  color: white;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  display: block;
+  cursor: pointer;
+}
+
+#toggle:checked + .menu {
+  display: block;
+}
+
+#toggle {
+  display: none;
+}
+
 .first-pane {
-  box-sizing: border-box;
-  min-height: 46vh;
-  display: grid;
-  grid-gap: 0rem;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, 50%);
+  height: 25vh;
 }
 
-/* first div in pane (top left) */
-.first-pane div:first-child {
-  background: url("macbook.jpg");
-  background-size: 100% 100%;
-  /* filter: grayscale(100%); */
-  /* filter: invert(75%); */
-  opacity: 0.7;
-}
-/* last div in first-pane (bottom right)*/
-.first-pane div:last-child {
-  background-image: url("me.jpg");
-  background-size: 100% 100%;
-  /* filter: invert(75%); */
-  opacity: 0.7;
+.me,
+.empty {
+  display: none;
 }
 
-.first-pane div:first-child:hover,
-.first-pane div:last-child:hover {
-  opacity: 1;
-  /* filter: grayscale(100%); */
-  /* filter: invert(0%); */
+.first-pane {
+  background-image: url("https://images.pexels.com/photos/248515/pexels-photo-248515.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  width: 85%;
+  margin: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /*second div in first-pane with text */
@@ -68,15 +85,15 @@ nav a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 .first-pane .typescript p {
-  /* margin-right: 5px; */
   font-family: "Courier";
-  font-size: 0.5rem;
-  /* font-weight: bolder; */
+  /* font-size: 0.5rem; */
+
   font-weight: 700;
-  color: black;
+  color: white;
   white-space: nowrap;
   overflow: hidden;
   display: block;
@@ -136,39 +153,33 @@ nav a:hover {
   }
 }
 
-.third-pane {
-  background: white;
-  border: solid green 1px;
-}
-
-.projects {
-  box-sizing: border-box;
-  height: 46vh;
-  background: red;
-  border: solid black 1px;
-}
-
 @media only screen and (min-width: 600px) {
-  body {
-    /* background-color: lightblue; */
+  /* navbar */
+  label {
+    display: none;
+  }
+  nav {
+    width: 100%;
   }
 
-  .first-pane {
-    margin: auto;
-    min-height: 91vh;
-    width: 90vw;
-  }
-
-  .first-pane .typescript p {
+  .menu {
+    display: block;
+    float: right;
+    text-align: right;
+    width: 100%;
     margin: 0;
-    font-size: 2rem;
   }
 
-  .third-pane {
-    display: grid;
-    grid-gap: 0rem;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
+  .menu a {
+    text-decoration: none;
+    color: grey;
+    margin: 0 10px;
+    line-height: 70px;
+    border-bottom: 1px solid black;
+    float: right;
+  }
+  .first-pane {
+    height: 50vh;
   }
 }
 
