@@ -9,7 +9,7 @@ body {
 }
 
 html {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 nav {
@@ -72,7 +72,7 @@ main {
 
 #box1 {
   position: absolute;
-  background-image: url("code.png");
+  background-image: url('code.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 25vh;
@@ -128,7 +128,7 @@ main {
 }
 
 .first-pane .typescript p {
-  font-family: "Courier";
+  font-family: 'Courier';
   /* font-size: 0.5rem; */
   padding-bottom: 10px;
   font-weight: 700;
@@ -163,12 +163,15 @@ main {
   display: none;
 }
 
+/* second pane */
+
 .second-pane {
-  height: 1000vh;
+  /* height: 1000vh; */
   /* background: red; */
   text-align: center;
   /* width: 80%; */
   /* margin: auto; */
+  background: yellow;
 }
 
 img {
@@ -179,6 +182,65 @@ img {
   text-align: center;
 }
 
+/* third-pane */
+
+.third-pane {
+}
+
+.projects {
+  border: solid black 1px;
+  height: 45vh;
+  width: 100%;
+}
+
+/* individual projects */
+
+#smoothie-bar-app {
+  background-image: url('projects/smoothie-bar.png');
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
+
+#remindly-app {
+  background-image: url('projects/remindly.png');
+  background-size: cover;
+}
+
+#dipict-app {
+  background-image: url('projects/DIPICT.png');
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
+
+#authentication-app {
+  background-image: url('projects/auth.png');
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
+
+#fav-workout-app {
+  background-image: url('projects/fav-workout.png');
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
+
+#carousel-app {
+  background-image: url('projects/carousel.png');
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
+
+#js-time-app {
+  background-image: url('projects/js-time.png');
+  background-repeat: no-repeat;
+  background-size: 90% 90%;
+  background-position: center;
+}
 @keyframes type {
   0% {
     width: 0;
@@ -289,12 +351,12 @@ img {
   } */
 
   #box1 {
-    background-image: url("code.png");
+    background-image: url('code.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
   #box4 {
-    background-image: url("me2.jpg");
+    background-image: url('me2.jpg');
     background-repeat: none;
     background-size: 100% 100%;
   }
@@ -401,6 +463,15 @@ img {
     width: 300px;
     height: 400px;
     margin-right: 50px;
+  }
+
+  .third-pane {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .third-pane .projects {
+    width: 32%;
+    justify-content: space-between;
   }
 }
 
