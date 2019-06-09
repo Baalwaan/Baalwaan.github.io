@@ -166,27 +166,36 @@ main {
 /* second pane */
 
 .second-pane {
-  /* height: 1000vh; */
-  /* background: red; */
   text-align: center;
-  /* width: 80%; */
-  /* margin: auto; */
-  background: yellow;
+  /* background: yellow; */
+  margin-top: 150px;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+  border: solid black 1px;
 }
 
+.pane-titles {
+  font-size: 2rem;
+  /* margin: 20px; */
+  padding: 0;
+  /* width: 40%; */
+  /* margin: 50px auto; */
+}
 img {
-  /* border-radius: 25%; */
   width: 200px;
   height: 250px;
   border-style: ridge;
   text-align: center;
+  margin: 50 auto;
 }
 
 /* third-pane */
 .third-pane {
+  margin-top: 250px;
   text-align: center;
-  margin-top: 50px;
+  border: solid black 1px;
 }
+
 .projects {
   /* border: solid black 1px; */
   height: 45vh;
@@ -323,6 +332,8 @@ img {
     width: 100%;
     margin: 0;
     padding-right: 25px;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .menu a {
