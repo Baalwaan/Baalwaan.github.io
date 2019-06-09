@@ -171,7 +171,7 @@ main {
   margin-top: 150px;
   line-height: 2.5rem;
   font-size: 1.3rem;
-  border: solid black 1px;
+  /* border: solid black 1px; */
 }
 
 .pane-titles {
@@ -193,7 +193,7 @@ img {
 .third-pane {
   margin-top: 250px;
   text-align: center;
-  border: solid black 1px;
+  /* border: solid black 1px; */
 }
 
 .projects {
