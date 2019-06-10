@@ -63,11 +63,14 @@ label {
 main {
   width: 85%;
   margin: auto;
+  border-left: solid black 1px;
+  border-right: solid black 1px;
 }
 
 .first-pane {
   position: relative;
   height: 25vh;
+  /* background: black; */
 }
 
 #box1 {
@@ -172,6 +175,7 @@ main {
   line-height: 2.5rem;
   font-size: 1.3rem;
   /* border: solid black 1px; */
+  /* background: grey; */
 }
 
 .pane-titles {
@@ -223,12 +227,17 @@ img {
   opacity: 0.8;
 }
 
-.project-link:active,
 .projects:active {
   transform: scale(0.95);
 }
 
 /* individual projects */
+
+#square-circle-app {
+  background-image: url('projects/square-circle2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 
 #react-quiz-app {
   background-image: url('projects/react-quiz.png');
