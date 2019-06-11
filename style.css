@@ -75,7 +75,7 @@ main {
 
 #box1 {
   position: absolute;
-  background-image: url('code.png');
+  background-image: url('assets/code.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 25vh;
@@ -234,54 +234,54 @@ img {
 /* individual projects */
 
 #square-circle-app {
-  background-image: url('projects/square-circle2.png');
+  background-image: url('assets/projects/square-circle2.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 #react-quiz-app {
-  background-image: url('projects/react-quiz.png');
+  background-image: url('assets/projects/react-quiz.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 #smoothie-bar-app {
-  background-image: url('projects/smoothie-bar.png');
+  background-image: url('assets/projects/smoothie-bar.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 #remindly-app {
-  background-image: url('projects/remindly.png');
+  background-image: url('assets/projects/remindly.png');
   background-size: cover;
 }
 
 #dipict-app {
-  background-image: url('projects/DIPICT.png');
+  background-image: url('assets/projects/DIPICT.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 #authentication-app {
-  background-image: url('projects/auth.png');
+  background-image: url('assets/projects/auth.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 #fav-workout-app {
-  background-image: url('projects/fav-workout.png');
+  background-image: url('assets/projects/fav-workout.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 #carousel-app {
-  background-image: url('projects/carousel.png');
+  background-image: url('assets/projects/carousel.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 #js-time-app {
-  background-image: url('projects/js-time.png');
+  background-image: url('assets/projects/js-time.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -397,12 +397,12 @@ img {
   } */
 
   #box1 {
-    background-image: url('code.png');
+    background-image: url('assets/code.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
   }
   #box4 {
-    background-image: url('me2.jpg');
+    background-image: url('assets/me2.jpg');
     background-repeat: none;
     background-size: 100% 100%;
   }
