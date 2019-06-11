@@ -16,9 +16,9 @@
       <input type="checkbox" id="toggle" />
       <div class="menu">
         <a href="/">Home</a>
-        <a href="#second-pane">About Me</a>
-        <a href="/">Projects</a>
-        <a href="/">Contact Me</a>
+        <a href="#second-pane" id="about-me">About Me</a>
+        <a href="#third-pane" id="projects">Projects</a>
+        <a href="/" id="contact-me">Contact Me</a>
       </div>
     </nav>
     <main>
@@ -65,10 +65,11 @@
         </div>
       </section>
 
-      <section class="third-pane">
-        <h1 class="pane-titles">
+      <section class="third-pane" id="third-pane">
+        <h1 class="pane-titles">Projects</h1>
+        <h2>
           Take a look at some fun projects I have worked on
-        </h1>
+        </h2>
         <div class="projects-container">
           <div class=" projects" id="square-circle-app">
             <a class="project-link" href="">Square-Circle</a>
@@ -125,5 +126,6 @@
         <!--  -->
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
