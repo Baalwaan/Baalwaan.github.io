@@ -71,7 +71,6 @@ main {
 .first-pane {
   position: relative;
   height: 25vh;
-  /* background: black; */
 }
 /* empty will be used by every pane in page to offset it against navbar anchor tags */
 .empty {
@@ -374,14 +373,6 @@ img {
     justify-content: center;
     align-items: center;
   }
-  /* #box2 {
-    display: table;
-  }
-
-  #box2 div {
-    display: table-cell;
-    vertical-align: middle;
-  } */
 
   #box1 {
     background-image: url('assets/code.png');
@@ -409,7 +400,6 @@ img {
     position: relative;
     animation-name: top-row;
     animation-duration: 4s;
-    /* animation-delay: 2s; */
   }
 
   @keyframes top-row {
@@ -431,21 +421,17 @@ img {
     position: relative;
     animation-name: bottom-row;
     animation-duration: 4s;
-    /* animation-delay: 2s; */
   }
 
   @keyframes bottom-row {
     0% {
       right: -400px;
-      /* top: 0; */
     }
     50% {
       right: 0;
-      /* top: 0; */
     }
     100% {
       right: 0;
-      /* top: 0; */
     }
   }
 
