@@ -451,12 +451,9 @@ img {
 
   /* scroll arrow animation */
   .arrow {
-    display: flex;
-    margin: auto;
-    justify-content: flex-end;
-    height: 10vh;
-    width: 100%;
-    margin: 25px;
+    display: inline-block;
+    width: 30px;
+    float: right;
   }
   .arrow span {
     display: block;
@@ -465,8 +462,8 @@ img {
     border-bottom: 5px solid #2a2b22;
     border-right: 5px solid #2a2b22;
     transform: rotate(45deg);
-    margin-top: -35px;
-    margin-left: 150px;
+    /* margin-top: -35px; */
+    margin-left: -35px;
     animation: animate 2s infinite;
     /* animation-delay: 2s; */
   }
@@ -506,6 +503,10 @@ img {
   .projects {
     width: 49%;
   }
+}
+.second-pane {
+  width: 80%;
+  margin: auto;
 }
 
 @media only screen and (min-width: 800px) {
