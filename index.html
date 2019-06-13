@@ -135,8 +135,20 @@
       >
         <div class="empty"><!---top offset sticky navbar ---></div>
         <h1 class="pane-titles" id="contact">Contact</h1>
-        <input type="text" placeholder="Your name *" id="name" required />
-        <input type="text" placeholder="Your email *" id="name" required />
+        <input
+          type="text"
+          placeholder="Your name *"
+          id="name"
+          pattern="^(?=.{1,40}$)[a-zA-Z]+(?:['_.\s][a-z]+)*$"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Your email *"
+          id="email"
+          pattern="[-.\w]+@([\w-]+\.)+[\w-]{2,20}"
+          required
+        />
         <input type="text" placeholder="Your phone *" required />
 
         <textarea
