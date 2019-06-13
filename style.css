@@ -170,7 +170,7 @@ main {
 .second-pane {
   text-align: center;
   line-height: 2.5rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .pane-titles {
@@ -182,7 +182,10 @@ img {
   height: 250px;
   border-style: ridge;
   text-align: center;
-  margin: 50 auto;
+}
+
+.bio {
+  padding: 0 40px;
 }
 
 /* third-pane */
@@ -468,17 +471,16 @@ img {
     }
   }
 
-  .about-me {
+  /* .about-me {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+  } */
 
   /* revisit this */
   img {
     width: 300px;
     height: 400px;
-    margin-right: 50px;
   }
 
   .projects-container {
@@ -501,19 +503,10 @@ img {
   }
 }
 
-/* resources:
-14 Simple CSS 3D Text Effects You Should Download 2019:
-https://alinadigitalservices.com/css-3d-text-effects
-
-CSS Grid #14. Centering and Aligning Items in CSS Grid:
-https://www.joomlashack.com/blog/tutorials/center-and-align-items-in-css-grid/
-
-15 Web Developer Portfolios to Inspire You
-https://medium.freecodecamp.org/15-web-developer-portfolios-to-inspire-you-137fb1743cae
-
-startbuilding a simple Portfolio Website for a Junior Developer
-https: ; //dev.to/mrfrontend/start-building-a-simple-portfolio-website-for-a-junior-developer-e30 */
-
-/* typewrite tricks:
-https://css-tricks.com/snippets/css/typewriter-effect/
-https://codepen.io/anon/pen/pBXVJB */
+@media only screen and (min-width: 1300px) {
+  .about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
