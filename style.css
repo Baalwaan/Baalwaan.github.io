@@ -61,13 +61,6 @@ label {
   display: none;
 }
 
-main {
-  width: 75%;
-  margin: auto;
-  border-left: solid black 1px;
-  border-right: solid black 1px;
-}
-
 .first-pane {
   position: relative;
   height: 40vh;
@@ -300,14 +293,16 @@ img {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+.fourth-pane {
+  max-width: 25em;
+  margin: auto;
+}
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   padding-bottom: 1.25em;
-  max-width: 25em;
-  /* font-size: 1.2em; */
 }
 
 .input-container {
@@ -318,7 +313,6 @@ img {
 .contact-form input {
   width: 100%;
   padding: 1em 0;
-  /* margin: 10px 0; */
   outline: none;
   font-size: 1.2em;
   border: solid black;
@@ -329,7 +323,6 @@ img {
   height: 12em;
   border: solid black;
   padding: 1.25em 0;
-  /* margin: 2em 0; */
   font-size: inherit;
   resize: none;
 }
@@ -354,6 +347,12 @@ button:active {
 }
 
 @media only screen and (min-width: 650px) {
+  main {
+    width: 75%;
+    margin: auto;
+    border-left: solid black 1px;
+    border-right: solid black 1px;
+  }
   /* navbar */
   label {
     display: none;
