@@ -128,39 +128,48 @@
         </div>
       </section>
 
-      <form
-        class="contact-form"
-        action="https://script.google.com/macros/s/AKfycbxG4MzUf6Z6X5KxZbA66j0CiARk6ilV8qcsUhqA2HNw7tzJ81-E/exec"
-        method="post"
-      >
-        <div class="empty"><!---top offset sticky navbar ---></div>
-        <h1 class="pane-titles" id="contact">Contact</h1>
-        <input
-          type="text"
-          placeholder="Your name *"
-          id="name"
-          pattern="^(?=.{1,40}$)[a-zA-Z]+(?:['_.\s][a-z]+)*$"
-          required
-        />
-        <input
-          type="email"
-          placeholder="Your email *"
-          id="email"
-          pattern="[-.\w]+@([\w-]+\.)+[\w-]{2,20}"
-          required
-        />
-        <input type="text" placeholder="Your phone *" required />
+      <section class="fourth-pane">
+        <form
+          class="contact-form"
+          action="https://script.google.com/macros/s/AKfycbxG4MzUf6Z6X5KxZbA66j0CiARk6ilV8qcsUhqA2HNw7tzJ81-E/exec"
+          method="post"
+        >
+          <div class="empty"><!---top offset sticky navbar ---></div>
+          <h1 class="pane-titles" id="contact">Contact</h1>
+          <div class="input-container">
+            <input
+              type="text"
+              placeholder="Your name *"
+              id="name"
+              pattern="^(?=.{1,40}$)[a-zA-Z]+(?:['_.\s][a-z]+)*$"
+              required
+            />
+          </div>
+          <div class="input-container">
+            <input
+              type="email"
+              placeholder="Your email *"
+              id="email"
+              pattern="[-.\w]+@([\w-]+\.)+[\w-]{2,20}"
+              required
+            />
+          </div>
+          <div class="input-container">
+            <input type="text" placeholder="Your phone *" required />
+          </div>
+          <div class="input-container">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Your message..."
+            ></textarea>
+          </div>
 
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your message..."
-        ></textarea>
-
-        <button>Send Message</button>
-      </form>
+          <button>Send Message</button>
+        </form>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>

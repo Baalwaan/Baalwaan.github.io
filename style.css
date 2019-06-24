@@ -300,21 +300,25 @@ img {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
-  padding: 1.25em 1.25em;
+  margin: 0 auto;
+  padding-bottom: 1.25em;
   max-width: 25em;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
+}
+
+.input-container {
+  margin: 1.25em 0;
+  width: 100%;
 }
 
 .contact-form input {
   width: 100%;
   padding: 1em 0;
-  margin: 10px 0;
+  /* margin: 10px 0; */
   outline: none;
   font-size: 1.2em;
   border: solid black;
@@ -325,7 +329,7 @@ img {
   height: 12em;
   border: solid black;
   padding: 1.25em 0;
-  margin: 2em 0;
+  /* margin: 2em 0; */
   font-size: inherit;
   resize: none;
 }
@@ -333,8 +337,11 @@ img {
 button {
   padding: 1.25em;
   min-width: 11em;
+  font-size: 0.8em;
   cursor: pointer;
   outline: none;
+  background: black;
+  color: white;
 }
 
 button:active {
