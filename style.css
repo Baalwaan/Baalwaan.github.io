@@ -335,9 +335,9 @@ img {
 }
 
 #form-message {
-  border: solid black 1px;
-  margin-bottom: 0.25em;
+  margin-bottom: 1em;
   padding: 0.25em;
+  height: 1em;
 }
 
 button {

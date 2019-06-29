@@ -31,14 +31,22 @@ contactForm.addEventListener('submit', e => {
       headers: {
         'content-type': 'application/x-www-form-urlencoded'
       },
-      body: JSON.stringify(obj)
+      body: `<p>Hi Burhan, </p>
+      <p>${obj.name} has sent you a message from your portfolio.<p>
+      <p>Contact details:</p> 
+      <ul>
+      <li>Email: ${obj.email}</li>
+      <li>Phone: ${obj.phone}</li>  
+      </ul>
+      <p>Message</p>
+      <p>${obj.message}</p>  
+      `
     }
   )
-    .then(response => response.text())
     .then(response => {
       console.log(response);
-      formMessage.textContent = `Message successfully sent.`;
-      formMessage.style.color = 'green';
+      contactForm.textContent = `Message successfully sent.`;
+      contactForm.style.color = 'green';
     })
     .catch(err => {
       console.log('Error: ', err);
