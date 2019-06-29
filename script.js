@@ -1,16 +1,21 @@
-let links = [...document.getElementsByClassName('links')];
+// navbar links
 
+let links = [...document.getElementsByClassName('links')];
 const toggle = document.getElementById('toggle');
 
 const toggleBurgerNav = () => {
   toggle.checked = false;
 };
 
+//giving each link in navbar a function to toggle menu on and off
 links.forEach(link => link.addEventListener('click', toggleBurgerNav));
 
-document.getElementById('contact-form').addEventListener('submit', e => {
+//event listenter on contact form to post form
+
+const contactForm = document.getElementById('contact-form');
+
+contactForm.addEventListener('submit', e => {
   e.preventDefault();
-  const contactForm = document.getElementById('contact-form');
   const formMessage = document.getElementById('form-message');
   const formData = document.querySelectorAll('.form-data');
 
