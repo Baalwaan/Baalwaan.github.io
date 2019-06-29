@@ -61,6 +61,12 @@ label {
   display: none;
 }
 
+.project-message {
+  background: black;
+  color: white;
+  text-align: center;
+}
+
 .first-pane {
   position: relative;
   height: 40vh;
@@ -307,7 +313,7 @@ img {
 }
 
 .input-container {
-  margin: 1.25em 0;
+  margin: 1em 0;
   width: 100%;
 }
 
@@ -326,6 +332,12 @@ img {
   padding: 1.25em 0;
   font-size: inherit;
   resize: none;
+}
+
+#form-message {
+  margin-bottom: 1em;
+  padding: 0.25em;
+  height: 1em;
 }
 
 button {
