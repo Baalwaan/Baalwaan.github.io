@@ -21,7 +21,9 @@
         <a href="#third-pane" id="projects" class="links">Projects</a>
         <a href="#contact" class="links">Contact</a>
       </div>
+      <!-- <p class="project-message">Project Still under construction</p> -->
     </nav>
+
     <main>
       <!-- first pane -->
       <section class="first-pane">
@@ -133,39 +135,53 @@
           class="contact-form"
           action="https://script.google.com/macros/s/AKfycbxG4MzUf6Z6X5KxZbA66j0CiARk6ilV8qcsUhqA2HNw7tzJ81-E/exec"
           method="post"
+          id="contact-form"
         >
           <div class="empty"><!---top offset sticky navbar ---></div>
           <h1 class="pane-titles" id="contact">Contact</h1>
           <div class="input-container">
             <input
+              class="form-data"
               type="text"
               placeholder="Your name *"
               id="name"
               pattern="^(?=.{1,40}$)[a-zA-Z]+(?:['_.\s][a-z]+)*$"
+              name="your name"
               required
             />
           </div>
           <div class="input-container">
             <input
+              class="form-data"
               type="email"
               placeholder="Your email *"
               id="email"
+              name="email"
               pattern="[-.\w]+@([\w-]+\.)+[\w-]{2,20}"
               required
             />
           </div>
           <div class="input-container">
-            <input type="text" placeholder="Your phone *" required />
+            <input
+              type="text"
+              placeholder="Your phone *"
+              class="form-data"
+              name="phone"
+              required
+            />
           </div>
           <div class="input-container">
             <textarea
-              name=""
-              id=""
+              class="form-data"
               cols="30"
               rows="10"
               placeholder="Your message..."
+              name="message"
+              n
             ></textarea>
           </div>
+
+          <div id="form-message"></div>
 
           <button>Send Message</button>
         </form>
